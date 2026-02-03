@@ -1,14 +1,5 @@
 const homePoints = document.getElementById('home-team-points');
 const awayPoints = document.getElementById('away-team-points');
-
-const homeOne = document.getElementById('plus-1-home');
-const homeTwo = document.getElementById('plus-2-home');
-const homeThree = document.getElementById('plus-3-home');
-
-const awayOne = document.getElementById('plus-1-away');
-const awayTwo = document.getElementById('plus-2-away');
-const awayThree = document.getElementById('plus-3-away');
-
 const newGame = document.getElementById('new-game');
 
 let addHomeNum = parseInt(homePoints.textContent, 0);
