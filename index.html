@@ -12,19 +12,29 @@
 <body>
     <div id="scoreboard-con">
         <div id="home-points">
-            <p class="team">HOME</p>
-            <div id="home-team-points" class="points"></div>
-            <button class="add-1 buttons">+1</button>
-            <button class="add-2 buttons">+2</button>
-            <button class="add-3 buttons">+3</button>
+            <p class="team border">HOME</p>
+            <div id="home-team-points" class="points border">0</div>
+            <div class="button-con">
+                <button id="plus-1-home" class="add-1 buttons border" onclick="plusOneHome()">+1</button>
+                <button id="plus-2-home" class="add-2 buttons border" onclick="plusTwoHome()">+2</button>
+                <button id="plus-3-home" class="add-3 buttons border" onclick="plusThreeHome()">+3</button>
+            </div>
         </div>
         <div id="away-points">
-            <p class="team">AWAY</p>
-            <div id="away-team-points" class="points"></div>
-            <button class="add-1 buttons">+1</button>
-            <button class="add-2 buttons">+2</button>
-            <button class="add-3 buttons">+3</button>
+            <p class="team border">AWAY</p>
+            <div id="away-team-points" class="points border">0</div>
+                <div class="button-con">
+                    <button id="plus-1-home" class="add-1 buttons border" onclick="plusOneAway()">+1</button>
+                    <button id="plus-2-home" class="add-2 buttons border" onclick="plusTwoAway()">+2</button>
+                    <button id="plus-3-home" class="add-3 buttons border" onclick="plusThreeAway()">+3</button>
+                </div>
         </div>
     </div>
+
+    <div id="command-con">
+        <button id="new-game" class="buttons border" onclick="startNewGame()">NEW GAME</button>
+    </div>
+
+    <script src="/index.js"></script>
 </body>
 </html>

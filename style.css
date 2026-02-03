@@ -9,61 +9,93 @@
     /*points font "Bitcount Single", system-ui*/
 }
 
+.border {
+    border: 2px solid var(--lightblue);
+    box-shadow: 0 0 5px var(--black);
+    background-color: var(--black);
+    border-radius: 20px;
+}
+
 html body {
     background-color: var(--blue);
 }
 
 #scoreboard-con {
     display: flex;
-    margin: 150px auto;
     justify-content: center;
     align-items: center;
 }
 
+.team {
+    color: var(--white);
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
 #home-points {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 20px;
 }
 
 #away-points {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 20px;
+    
 }
 
 .team {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px 20px;
 }
 
 .points {
+    font-size: 100px;
+    color: var(--yellow);
+    font-family: "Bitcount Single", sans-serif;
+    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-content: center;
-    background-color: var(--black);
-    padding: 50px 50px;
-    border-radius: 20px;
-    font-size: 50px;
 }
 
 .button-con {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 10px 10px;
+    margin: 10px;
 }
 
 .buttons {
     padding: 15px;
     font-size: 20px;
     border-radius: 10px;
-    border-color: var(--lightblue);
     margin: 3px 3px;
-    background-color: var(--black);
+    color: var(--lightblue);
+    font-family: sans-serif;
 }
 
 .buttons:hover {
-    background-color: var(--lightblue);
+    background-color: var(--white);
+    box-shadow: 0 0 30px var(--black);
+    color: var(--black);
+    border-color: var(--black);
 }
 
 .buttons:active {
-    background-color: var(--white);
+    background-color: var(--yellow);
+    border-color: var(--yellow);
+    box-shadow: 0 0 30px var(--white);
+}
+
+#new-game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
